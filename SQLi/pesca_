@@ -1,0 +1,3 @@
+delete from contato where id = 32;
+
+AND (SELECT 1 FROM user WHERE SUBSTRING(user,1,1) = 'A')

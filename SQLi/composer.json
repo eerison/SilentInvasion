@@ -1,0 +1,15 @@
+{
+    "name": "eerison/sqli",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erison Silva",
+            "email": "erison.sdn@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Eerison\\Sqli\\": "src/"}
+    },
+    "require": {}
+}
