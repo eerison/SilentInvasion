@@ -32,7 +32,11 @@ class SqlTest
 
 		$this->sql = 'SELECT * from contato where id = ' . $id;
 
-		foreach($this->con->query($this->sql) as $row) {
+//        $prepare =$stm->prepare('SELECT * from contato where id =:id');
+//        $prepare->bindParam(':id', $id);
+//        $prepare->execute();
+
+        foreach($this->con->query($this->sql) as $row) {
 
         	printf('name : %s ------- phone : %s<br /><br />', $row['name'], $row['phone']);  
     	}

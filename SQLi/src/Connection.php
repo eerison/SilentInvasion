@@ -8,7 +8,7 @@ class Connection
 	private function CreateCon() : \PDO
 	{
 		if(!$this->con) {
-			 $con = new \PDO('mysql:host=localhost;dbname=public', 'root', 123456);
+			 $con = new \PDO('mysql:host=db;dbname=silent', 'silent', 123456);
 			 $con->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 			 $this->con = $con;
 		}
